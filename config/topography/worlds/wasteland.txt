@@ -1,0 +1,42 @@
+//Sets Single biome type to BOP Wasteland
+//setSingleBiome("biomesoplenty:wasteland")
+
+//Add Biomes for generatione
+addBiomes("biomesoplenty:wasteland")
+addBiomes("minecraft:ocean")
+
+//Adds a basic overworld terrain generator and sets it to generate obsidian and lava instead of stone and water, with a higher sea level.
+overworld = new OverworldGenerator()
+//overworld.setTopBlock(<biomesoplenty:dried_sand>)
+overworld.setSeaLevel(64)
+addGenerator(overworld)
+
+//Adds the vanilla caves.
+caves = new VanillaCaveGenerator()
+addGenerator(caves)
+
+//Adds the vanilla ravines.
+ravines = new VanillaRavineGenerator()
+addGenerator(ravines)
+
+//Adds water lakes.
+waterLake = new VanillaLakeGenerator(<minecraft:water>)
+addGenerator(waterLake)
+
+//Add lava lakes for above sea level. These are fairly rare.
+lavaLake = new VanillaLakeGenerator(<minecraft:lava>)
+lavaLake.setSpawnChance(100)
+lavaLake.setHeight(63, 247)
+addGenerator(lavaLake)
+
+//Add laval lakes for below sea level. This are fairly common.
+lavaLake = new VanillaLakeGenerator(<minecraft:lava>)
+lavaLake.setSpawnChance(32)
+lavaLake.setHeight(8, 62)
+addGenerator(lavaLake)
+
+generateMineshaft()
+
+//Adds vanilla decorations. This includes trees, ores, etc.
+decoration = new VanillaDecorationGenerator()
+addGenerator(decoration)
