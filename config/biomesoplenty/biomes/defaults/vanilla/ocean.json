@@ -1,0 +1,17 @@
+{
+  "beachBiomeLocation": "minecraft:beaches",
+  "generators": {
+    "glowshrooms": {
+      "enable": true
+    },
+    "miners_delight": {
+      "enable": true
+    },
+    "roots": {
+      "enable": true
+    },
+    "sapphire": {
+      "enable": true
+    }
+  }
+}
