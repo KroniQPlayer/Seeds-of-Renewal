@@ -1,0 +1,18 @@
+{
+  "path": "mod_mysticalagriculture/soils/fts_soil.json",
+  "enabled": true,
+  "id": "fts_soil",
+  "name": "Tilled Fertile Soil",
+  "varients": [
+    {
+      "item": "fertilesoil:fertilesoiltilled",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    }
+  ]
+}
