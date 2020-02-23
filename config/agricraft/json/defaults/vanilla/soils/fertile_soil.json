@@ -1,0 +1,18 @@
+{
+  "path": "vanilla/soils/fertile_soil.json",
+  "enabled": true,
+  "id": "fertile_soil",
+  "name": "Fertile Soil",
+  "varients": [
+    {
+      "item": "fertilesoil:fertilesoil",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    }
+  ]
+}
